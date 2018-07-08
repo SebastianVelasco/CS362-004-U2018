@@ -1140,14 +1140,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case sea_hag:
-      for (i = 0; i < state->numPlayers; i++){
-	if (i != currentPlayer){
-	  state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    state->deckCount[i]--;
-	  state->discardCount[i]++;
-	  state->deck[i][state->deckCount[i]--] = curse;//Top card now a curse
-	}
-      }
-      return 0;
+      return seaHag_func(handPos, state);
 		
     case treasure_map:
       //search hand for another treasure_map
@@ -1291,7 +1284,7 @@ int updateCoins(int player, struct gameState *state, int bonus)
 int smithy_func(int handPos, struct gameState* state)
 {
   // Find current player and identify the number of cards to draw
-  int i = 0, cards_to_draw = 3;
+  int i = 0, cards_to_draw = 4;
   int currentPlayer = whoseTurn(state);
 
   // Loop to draw three cards
@@ -1302,7 +1295,7 @@ int smithy_func(int handPos, struct gameState* state)
   }
 
   // Discard the card from players hand
-  discardCard(handPos, currentPlayer, state, 0);
+  discardCard(handPos, currentPlayer, state, 1);
 
   // Return 0
   return 0;
@@ -1330,7 +1323,7 @@ int adventurer_func(int handPos, struct gameState* state)
     // Top card is the most recently drawn card
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
 
-    if(cardDrawn == copper || cardDrawn == gold)
+    if(cardDrawn == gold)
     {
       drawntreasure ++;
     }
@@ -1361,7 +1354,7 @@ int village_func(int handPos, struct gameState* state)
   drawCard(currentPlayer, state);
 
   // +2 Actions
-  state->numActions = state -> numActions + 2;
+  state->numActions = state -> numActions + 1;
 
   // discardCard from Hand into trash
   discardCard(handPos, currentPlayer, state, 1);
@@ -1389,14 +1382,14 @@ int seaHag_func(int handPos, struct gameState* state)
 
   for(i = 0; i < state->numPlayers; i++)
   {
-    if(i != currentPlayer)
+    if(i == currentPlayer)
     {
     state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    
     state->deckCount[i]--;
 	  state->discardCount[i]++;
 
     //Top card now a curse
-	  state->deck[i][state->deckCount[i]--] = curse;
+	  state->deck[i][state->deckCount[i]-2] = curse;
     }
   }
 
