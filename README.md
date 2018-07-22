@@ -1,2 +1,1 @@
-# CS362-004-U2018
-Summer term 2018 E-Campus Class
+This is my Assignment 2 Branch

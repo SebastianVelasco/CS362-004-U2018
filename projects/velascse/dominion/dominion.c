@@ -1323,7 +1323,7 @@ int adventurer_func(int handPos, struct gameState* state)
     // Top card is the most recently drawn card
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
 
-    if(cardDrawn == gold)
+    if(cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
     {
       drawntreasure ++;
     }
