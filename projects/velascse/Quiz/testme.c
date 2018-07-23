@@ -18,7 +18,7 @@ char *inputString()
 
     for(i = 0; i < 5; i++)
     {
-        int n = rand() % (116 - 101 + 1 ) + 101;
+        int n = rand() % (122 - 97 + 1 ) + 97;
         strng[i] = (char) n;
     }
 
