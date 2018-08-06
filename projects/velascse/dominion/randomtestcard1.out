@@ -2,13 +2,13 @@
 Checking Smithy Card here
 
 ~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
-PASSED TESTS: 0
-FAILED TESTS: 20075
+PASSED TESTS: 1
+FAILED TESTS: 20023
 
 ~~~~~~~~~~~~~~~~~ FAILURE REPORT ~~~~~~~~~~~~~~~~~~
-Discard failed: 75
-Deck Count mismatch: 10000
-Hand Count mismatch: 10000
+Discard failed: 25
+Deck Count mismatch: 9999
+Hand Count mismatch: 9999
 Draw Card Failures: 0
 Card Effects Failures: 0
 ***** FAILED RANDOM TEST *****
@@ -17,11 +17,16 @@ Card Effects Failures: 0
 ~~~~~~~~~~~~~~~~~~~~  COVERAGE  ~~~~~~~~~~~~~~~~~~~~
 
 File 'randomtestcard1.c'
-Lines executed:90.00% of 60
+Lines executed:91.80% of 61
+Branches executed:100.00% of 24
+Taken at least once:75.00% of 24
+Calls executed:96.55% of 29
 Creating 'randomtestcard1.c.gcov'
 
 File '<built-in>'
 No executable lines
+No branches
+No calls
 Removing '<built-in>.gcov'
 
 File 'dominion.c'
@@ -1358,7 +1363,7 @@ Creating 'dominion.c.gcov'
         -: 1323:    // Top card is the most recently drawn card
     #####: 1324:    cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
         -: 1325:
-    #####: 1326:    if(cardDrawn == gold)
+    #####: 1326:    if(cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
         -: 1327:    {
     #####: 1328:      drawntreasure ++;
         -: 1329:    }

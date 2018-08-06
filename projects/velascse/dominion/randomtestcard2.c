@@ -98,6 +98,7 @@ int main()
     // Set up variables
     int i, j, player;
     struct gameState G;
+    srand(time(NULL));
 
     // Begin with random tests over 10000 random iterations
     for(i = 0; i < 10000; i++)

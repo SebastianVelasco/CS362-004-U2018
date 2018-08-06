@@ -82,24 +82,26 @@ assignment_3_test_suite: unittest1 unittest2 unittest3 unittest4 cardtest1 cardt
 randomtestadventurer: randomtestadventurer.c dominion.c rngs.c
 	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.c rngs.c -w $(CFLAGS)
 	./randomtestadventurer > randomtestadventurer.out
-	gcov randomtestadventurer.c >> randomtestadventurer.out
+	gcov randomtestadventurer.c -b >> randomtestadventurer.out
 	gcov dominion.c >> randomtestadventurer.out
 	cat dominion.c.gcov >> randomtestadventurer.out
 	
-
 randomtestcard1: randomtestcard1.c dominion.c rngs.c
 	gcc -o randomtestcard1 -g randomtestcard1.c dominion.c rngs.c -w $(CFLAGS)
 	./randomtestcard1 > randomtestcard1.out
-	gcov randomtestcard1.c >> randomtestcard1.out
+	gcov randomtestcard1.c -b >> randomtestcard1.out
 	gcov dominion.c >> randomtestcard1.out
 	cat dominion.c.gcov >> randomtestcard1.out
 
 randomtestcard2: randomtestcard2.c dominion.c rngs.c
 	gcc -o randomtestcard2 -g randomtestcard2.c dominion.c rngs.c -w $(CFLAGS)
 	./randomtestcard2 > randomtestcard2.out
-	gcov randomtestcard2.c >> randomtestcard2.out
+	gcov randomtestcard2.c -b >> randomtestcard2.out
 	gcov dominion.c >> randomtestcard2.out
 	cat dominion.c.gcov >> randomtestcard2.out
+
+assignment_4_test_suite: randomtestadventurer randomtestcard1 randomtestcard2
+	rm -f *.o *.gcda *.gcno playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so testDrawCard testDrawCard.exe randomtestadventurer randomtestcard1 randomtestcard2
 
 clean:
 	rm -f *.o *.gcda *.gcno playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4

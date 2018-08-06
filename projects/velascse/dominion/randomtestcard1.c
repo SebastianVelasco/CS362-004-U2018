@@ -19,12 +19,7 @@ void smithyRandomCheck(int player, struct gameState* state)
     // Create and copy the gamestate that was passed in
     struct gameState before;
     memcpy(&before,state,sizeof(struct gameState));
-    // Get Values before continuing
-    int beforeDeckCount = before.deckCount[player];
-    int beforeHandCount = before.handCount[player]; // {DELETE} If issues, revert to pointer notation
-    int beforeDiscard = before.discardCount[player];
     
-
     // Call the Smithy Card with no bonus
     ret = cardEffect(smithy, 0,0,0,state,0,0);
 
@@ -36,9 +31,14 @@ void smithyRandomCheck(int player, struct gameState* state)
     // Dicard Card
     j = discardCard(0, player, &before, 0);
 
+    // Get Values before continuing
+    int beforeDeckCount = before.deckCount[player];
+    int beforeHandCount = before.handCount[player]; 
+    int beforeDiscard = before.discardCount[player];
+
     // Get Values of deck post
     int afterDeckCount = state->deckCount[player];
-    int afterHandCount = state->handCount[player]; // {DELETE} If issues, revert to pointer notation
+    int afterHandCount = state->handCount[player]; 
     int afterDiscard = state->discardCount[player];
 
     int passed = 1;
@@ -72,8 +72,7 @@ void smithyRandomCheck(int player, struct gameState* state)
     {
         handFailure++;
         passed = 0;
-    }
-    // Check Discard 
+    } 
 
     // Check if all passed
     if (passed == 1)
@@ -90,6 +89,7 @@ int main()
     // Set up variables
     int i, j, player;
     struct gameState G;
+    srand(time(NULL));
 
     // Begin with random tests over 10000 random iterations
     for(i = 0; i < 10000; i++)
@@ -97,7 +97,7 @@ int main()
         // Fill gamestate G with random bytes
         for (j = 0; j < sizeof(struct gameState); j++) 
         {
-            ((char*)&G)[j] = floor(Random() * 256);
+            ((char*)&G)[j] = floor(Random() *256);
         }
 
         // Randomly generate a "Sane" gamestate

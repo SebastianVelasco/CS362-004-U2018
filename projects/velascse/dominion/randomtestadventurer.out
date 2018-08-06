@@ -19,10 +19,15 @@ Treasure Failures: 10000
 
 File 'randomtestadventurer.c'
 Lines executed:85.11% of 94
+Branches executed:96.15% of 52
+Taken at least once:78.85% of 52
+Calls executed:92.86% of 28
 Creating 'randomtestadventurer.c.gcov'
 
 File '<built-in>'
 No executable lines
+No branches
+No calls
 Removing '<built-in>.gcov'
 
 File 'dominion.c'
