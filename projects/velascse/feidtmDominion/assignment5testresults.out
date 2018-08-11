@@ -1,0 +1,350 @@
+Results for Assignment 5 test suit:
+unittest1.c:
+
+~~~~~ Unit Test 1: isGameOver() ~~~~~
+Test: Passed
+
+~~~~~ End of Unit Test 1 ~~~~~
+File 'unittest1.c'
+Lines executed:92.86% of 14
+Creating 'unittest1.c.gcov'
+
+File 'dominion.c'
+Lines executed:17.11% of 561
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+
+~~~~~ Unit Test 2: shuffle() ~~~~~
+Is the deck being shuffled
+
+Player deck count == 0
+Test: Passed
+
+Player deck count == 10
+Will the deck shuffle?
+Test: Passed
+
+~~~~~ End of Unit Test 2 ~~~~~
+File 'unittest2.c'
+Lines executed:93.94% of 33
+Creating 'unittest2.c.gcov'
+
+File '<built-in>'
+No executable lines
+Removing '<built-in>.gcov'
+
+File 'dominion.c'
+Lines executed:16.22% of 561
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+
+~~~~~ Unit Test 3: updateCoins() ~~~~~
+
+Starting with Copper
+
+Expecting: 10 coins
+
+Test: Passed
+
+Now Silver
+
+Expecting: 20 coins
+
+Test: Passed
+
+Finally Gold
+
+Expecting: 30 coins
+
+Test: Passed
+
+Finally a Mix
+
+Expecting: 10 coins
+
+Test: Passed
+
+~~~~~ End of Unit Test 3 ~~~~~
+File 'unittest3.c'
+Lines executed:97.37% of 38
+Creating 'unittest3.c.gcov'
+
+File 'dominion.c'
+Lines executed:1.96% of 561
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+
+~~~~~ Unit Test 4: getCost() ~~~~~
+
+Check costs for all cards in hand
+Are they Correct?
+
+7
+Test: Passed
+Cost is correct
+
+10
+Test: Passed
+Cost is correct
+
+22
+Test: Passed
+Cost is correct
+
+14
+Test: Passed
+Cost is correct
+
+17
+Test: Passed
+Cost is correct
+Test: Passed
+
+All returned costs are correct
+
+~~~~~ End of Unit Test 4 ~~~~~
+File 'unittest4.c'
+Lines executed:78.79% of 33
+Creating 'unittest4.c.gcov'
+
+File 'dominion.c'
+Lines executed:18.00% of 561
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+
+~~~~~~~~~~~~ Card Test 1: Smithy() ~~~~~~~~~~~~~~~~~~
+
+Checking to see if three cards have been added
+
+5
+8
+Test: Failed
+
+Checking deck count to make sure it is 3 cards less
+2
+1
+Test: Failed
+
+Checking discard pile to make sure it was added
+0
+0
+Test: Failed
+
+Change to victory card piles?
+Province Pile
+Test: Passed
+
+Duchy Pile
+Test: Passed
+
+Estate Pile
+Test: Passed
+
+No change to kingdom card piles
+
+10
+10
+
+8
+8
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+Test: Passed
+
+~~~~~~~~~~~~~~~~ End Testing of Smithy() ~~~~~~~~~~~~~~~~~~~~~~~~~~
+File 'cardtest1.c'
+Lines executed:96.08% of 51
+Creating 'cardtest1.c.gcov'
+
+File 'dominion.c'
+Lines executed:20.50% of 561
+Creating 'dominion.c.gcov'
+
+
+~~~~~~~~~~~~ Card Test 2: Village() ~~~~~~~~~~~~~~~~~~
+
+Checking to see if one card has been added
+Test: Passed
+
+Checking deck count to make sure it is 1 less card
+Test: Passed
+
+Checking to see if action is plus 2
+Test: Passed
+
+Checking discard pile to make sure it was added
+Test: Failed
+
+Change to victory card piles?
+Province Pile
+Test: Passed
+Duchy Pile
+Test: Passed
+Estate Pile
+Test: Passed
+
+No change to kingdom card piles
+Test: Passed
+
+~~~~~~~~~~~~~~~~ End Testing of Village() ~~~~~~~~~~~~~~~~~~~~~~~~~~
+File 'cardtest2.c'
+Lines executed:95.74% of 47
+Creating 'cardtest2.c.gcov'
+
+File 'dominion.c'
+Lines executed:19.96% of 561
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+
+~~~~~~~~~~~~ Card Test 3: Great Hall() ~~~~~~~~~~~~~~~~~~
+
+Checking to see if one card has been added
+Test: Passed
+
+Checking deck count to make sure it is 1 card less
+Test: Passed
+
+Checking to see if action is plus 1
+Test: Passed
+
+Checking discard pile to make sure it was added
+Test: Failed
+
+Change to victory card piles?
+Province Pile
+Test: Passed
+Duchy Pile
+Test: Passed
+Estate Pile
+Test: Passed
+
+No change to kingdom card piles
+Test: Passed
+
+~~~~~~~~~~~~~~~~ End Testing of Great Hall() ~~~~~~~~~~~~~~~~~~~~~~~~~~
+File 'cardtest3.c'
+Lines executed:95.74% of 47
+Creating 'cardtest3.c.gcov'
+
+File 'dominion.c'
+Lines executed:19.96% of 561
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+
+~~~~~~~~~~~~ Card Test 4: Adventurer() ~~~~~~~~~~~~~~~~~~
+
+Checking to see if the cards have been added
+Test: Failed
+
+Are there +2 treasure cards
+Test: Passed
+
+Checking discard pile to make sure it was added
+Before Discard: 0
+After Discard: 0
+Test: Passed
+
+Change to victory card piles?
+Province Pile
+Test: Passed
+Duchy Pile
+Test: Passed
+Estate Pile
+Test: Passed
+
+No change to kingdom card piles
+Test: Passed
+
+~~~~~~~~~~~~~~~~ End Testing of Adventurer() ~~~~~~~~~~~~~~~~~~~~~~~~~~
+File 'cardtest4.c'
+Lines executed:96.08% of 51
+Creating 'cardtest4.c.gcov'
+
+File 'dominion.c'
+Lines executed:19.61% of 561
+Creating 'dominion.c.gcov'
+
+randomtestcard1.c:
+~~~~~~~~~~~~~~~~~~~~  RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+Checking Smithy Card here
+
+~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
+PASSED TESTS: 1
+FAILED TESTS: 20023
+
+~~~~~~~~~~~~~~~~~ FAILURE REPORT ~~~~~~~~~~~~~~~~~~
+Discard failed: 25
+Deck Count mismatch: 9999
+Hand Count mismatch: 9999
+Draw Card Failures: 0
+Card Effects Failures: 0
+***** FAILED RANDOM TEST *****
+
+~~~~~~~~~~~~~~~~~~~~  END OF RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~  COVERAGE  ~~~~~~~~~~~~~~~~~~~~
+
+File 'randomtestcard1.c'
+Lines executed:91.80% of 61
+Creating 'randomtestcard1.c.gcov'
+
+File '<built-in>'
+No executable lines
+Removing '<built-in>.gcov'
+
+File 'dominion.c'
+Lines executed:12.48% of 561
+Creating 'dominion.c.gcov'
+
+randomtestcard2.c:
+~~~~~~~~~~~~~~~~~~~~  RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+Checking Village Card here
+
+~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
+PASSED TESTS: 10000
+FAILED TESTS: 0
+ ~~~~~~~~~~~~~~~ PASSED ALL RANDOM TEST ~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~  END OF RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~  COVERAGE  ~~~~~~~~~~~~~~~~~~~~
+
+File 'randomtestcard2.c'
+Lines executed:69.70% of 66
+Creating 'randomtestcard2.c.gcov'
+
+File '<built-in>'
+No executable lines
+Removing '<built-in>.gcov'
+
+File 'dominion.c'
+Lines executed:11.76% of 561
+Creating 'dominion.c.gcov'
+
+randomtestadventurer.c:

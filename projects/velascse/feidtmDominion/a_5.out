@@ -1,0 +1,729 @@
+Assignment 5 test suit:
+
+~~~~~ Unit Test 1: isGameOver() ~~~~~
+Test: Passed
+
+~~~~~ End of Unit Test 1 ~~~~~
+Function 'assertTrue'
+Lines executed:80.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:50.00% of 2
+
+Function 'main'
+Lines executed:100.00% of 9
+No branches
+Calls executed:100.00% of 5
+
+File 'unittest1.c'
+Lines executed:92.86% of 14
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:85.71% of 7
+Creating 'unittest1.c.gcov'
+
+File 'dominion.c'
+Lines executed:17.11% of 561
+Branches executed:17.75% of 417
+Taken at least once:13.91% of 417
+Calls executed:7.07% of 99
+Creating 'dominion.c.gcov'
+
+
+~~~~~ Unit Test 2: shuffle() ~~~~~
+Is the deck being shuffled
+
+Player deck count == 0
+Test: Passed
+
+Player deck count == 10
+Will the deck shuffle?
+Test: Passed
+
+~~~~~ End of Unit Test 2 ~~~~~
+Function 'assertTrue'
+Lines executed:80.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:50.00% of 2
+
+Function 'main'
+Lines executed:96.43% of 28
+Branches executed:100.00% of 10
+Taken at least once:80.00% of 10
+Calls executed:92.31% of 13
+
+File 'unittest2.c'
+Lines executed:93.94% of 33
+Branches executed:100.00% of 12
+Taken at least once:75.00% of 12
+Calls executed:86.67% of 15
+Creating 'unittest2.c.gcov'
+
+File '<built-in>'
+No executable lines
+No branches
+No calls
+Removing '<built-in>.gcov'
+
+File 'dominion.c'
+Lines executed:16.22% of 561
+Branches executed:15.83% of 417
+Taken at least once:13.19% of 417
+Calls executed:7.07% of 99
+Creating 'dominion.c.gcov'
+
+
+~~~~~ Unit Test 3: updateCoins() ~~~~~
+
+Starting with Copper
+
+Expecting: 10 coins
+
+Test: Passed
+
+Now Silver
+
+Expecting: 20 coins
+
+Test: Passed
+
+Finally Gold
+
+Expecting: 30 coins
+
+Test: Passed
+
+Finally a Mix
+
+Expecting: 10 coins
+
+Test: Passed
+
+~~~~~ End of Unit Test 3 ~~~~~
+Function 'assertTrue'
+Lines executed:80.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:50.00% of 2
+
+Function 'main'
+Lines executed:100.00% of 33
+Branches executed:100.00% of 10
+Taken at least once:100.00% of 10
+Calls executed:100.00% of 18
+
+File 'unittest3.c'
+Lines executed:97.37% of 38
+Branches executed:100.00% of 12
+Taken at least once:91.67% of 12
+Calls executed:95.00% of 20
+Creating 'unittest3.c.gcov'
+
+File 'dominion.c'
+Lines executed:1.96% of 561
+Branches executed:1.92% of 417
+Taken at least once:1.68% of 417
+Calls executed:0.00% of 99
+Creating 'dominion.c.gcov'
+
+
+~~~~~ Unit Test 4: getCost() ~~~~~
+
+Check costs for all cards in hand
+Are they Correct?
+
+7
+Test: Passed
+Cost is correct
+
+10
+Test: Passed
+Cost is correct
+
+22
+Test: Passed
+Cost is correct
+
+14
+Test: Passed
+Cost is correct
+
+17
+Test: Passed
+Cost is correct
+Test: Passed
+
+All returned costs are correct
+
+~~~~~ End of Unit Test 4 ~~~~~
+Function 'assertTrue'
+Lines executed:80.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:50.00% of 2
+
+Function 'main'
+Lines executed:78.57% of 28
+Branches executed:100.00% of 10
+Taken at least once:70.00% of 10
+Calls executed:71.43% of 14
+
+File 'unittest4.c'
+Lines executed:78.79% of 33
+Branches executed:100.00% of 12
+Taken at least once:66.67% of 12
+Calls executed:68.75% of 16
+Creating 'unittest4.c.gcov'
+
+File 'dominion.c'
+Lines executed:18.00% of 561
+Branches executed:22.54% of 417
+Taken at least once:15.11% of 417
+Calls executed:7.07% of 99
+Creating 'dominion.c.gcov'
+
+
+
+~~~~~~~~~~~~ Card Test 1: Smithy() ~~~~~~~~~~~~~~~~~~
+
+Checking to see if three cards have been added
+Hand Before: 5
+Hand After: 8
+Test: Failed
+
+Checking deck count to make sure it is 3 cards less
+Deck Before: 2
+Deck After: 1
+Test: Failed
+
+Checking discard pile to make sure it was added
+Discard Before: 0
+Deiscard After: 0
+Test: Failed
+
+Change to victory card piles?
+Province Pile
+Test: Passed
+
+Duchy Pile
+Test: Passed
+
+Estate Pile
+Test: Passed
+
+No change to kingdom card piles
+
+10
+10
+
+8
+8
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+
+10
+10
+Test: Passed
+
+~~~~~~~~~~~~~~~~ End Testing of Smithy() ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Function 'assertTrue'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 2
+
+Function 'main'
+Lines executed:95.65% of 46
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:96.43% of 28
+
+File 'cardtest1.c'
+Lines executed:96.08% of 51
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+Calls executed:96.67% of 30
+Creating 'cardtest1.c.gcov'
+
+File 'dominion.c'
+Lines executed:20.50% of 561
+Creating 'dominion.c.gcov'
+
+
+~~~~~~~~~~~~ Card Test 2: Village() ~~~~~~~~~~~~~~~~~~
+
+Checking to see if one card has been added
+Test: Passed
+
+Checking deck count to make sure it is 1 less card
+Test: Passed
+
+Checking to see if action is plus 2
+Test: Passed
+
+Checking discard pile to make sure it was added
+Test: Failed
+
+Change to victory card piles?
+Province Pile
+Test: Passed
+Duchy Pile
+Test: Passed
+Estate Pile
+Test: Passed
+
+No change to kingdom card piles
+Test: Passed
+
+~~~~~~~~~~~~~~~~ End Testing of Village() ~~~~~~~~~~~~~~~~~~~~~~~~~~
+Function 'assertTrue'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 2
+
+Function 'main'
+Lines executed:95.24% of 42
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:95.45% of 22
+
+File 'cardtest2.c'
+Lines executed:95.74% of 47
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+Calls executed:95.83% of 24
+Creating 'cardtest2.c.gcov'
+
+File 'dominion.c'
+Lines executed:19.96% of 561
+Branches executed:22.78% of 417
+Taken at least once:13.91% of 417
+Calls executed:10.10% of 99
+Creating 'dominion.c.gcov'
+
+
+~~~~~~~~~~~~ Card Test 3: Great Hall() ~~~~~~~~~~~~~~~~~~
+
+Checking to see if one card has been added
+Test: Passed
+
+Checking deck count to make sure it is 1 card less
+Test: Passed
+
+Checking to see if action is plus 1
+Test: Passed
+
+Checking discard pile to make sure it was added
+Test: Failed
+
+Change to victory card piles?
+Province Pile
+Test: Passed
+Duchy Pile
+Test: Passed
+Estate Pile
+Test: Passed
+
+No change to kingdom card piles
+Test: Passed
+
+~~~~~~~~~~~~~~~~ End Testing of Great Hall() ~~~~~~~~~~~~~~~~~~~~~~~~~~
+Function 'assertTrue'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 2
+
+Function 'main'
+Lines executed:95.24% of 42
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:95.45% of 22
+
+File 'cardtest3.c'
+Lines executed:95.74% of 47
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+Calls executed:95.83% of 24
+Creating 'cardtest3.c.gcov'
+
+File 'dominion.c'
+Lines executed:19.96% of 561
+Branches executed:22.78% of 417
+Taken at least once:14.15% of 417
+Calls executed:10.10% of 99
+Creating 'dominion.c.gcov'
+
+
+~~~~~~~~~~~~ Card Test 4: Adventurer() ~~~~~~~~~~~~~~~~~~
+
+Checking to see if the cards have been added
+Test: Failed
+
+Are there +2 treasure cards
+Test: Passed
+
+Checking discard pile to make sure it was added
+Before Discard: 0
+After Discard: 0
+Test: Passed
+
+Change to victory card piles?
+Province Pile
+Test: Passed
+Duchy Pile
+Test: Passed
+Estate Pile
+Test: Passed
+
+No change to kingdom card piles
+Test: Passed
+
+~~~~~~~~~~~~~~~~ End Testing of Adventurer() ~~~~~~~~~~~~~~~~~~~~~~~~~~
+Function 'assertTrue'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 2
+
+Function 'main'
+Lines executed:95.65% of 46
+Branches executed:100.00% of 22
+Taken at least once:72.73% of 22
+Calls executed:95.45% of 22
+
+File 'cardtest4.c'
+Lines executed:96.08% of 51
+Branches executed:100.00% of 24
+Taken at least once:75.00% of 24
+Calls executed:95.83% of 24
+Creating 'cardtest4.c.gcov'
+
+File 'dominion.c'
+Lines executed:19.61% of 561
+Branches executed:23.26% of 417
+Taken at least once:14.39% of 417
+Calls executed:11.11% of 99
+Creating 'dominion.c.gcov'
+
+~~~~~~~~~~~~~~~~~~~~  RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+Checking Smithy Card here
+
+~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
+PASSED TESTS: 1
+FAILED TESTS: 20023
+
+~~~~~~~~~~~~~~~~~ FAILURE REPORT ~~~~~~~~~~~~~~~~~~
+Discard failed: 25
+Deck Count mismatch: 9999
+Hand Count mismatch: 9999
+Draw Card Failures: 0
+Card Effects Failures: 0
+***** FAILED RANDOM TEST *****
+
+~~~~~~~~~~~~~~~~~~~~  END OF RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~  COVERAGE  ~~~~~~~~~~~~~~~~~~~~
+
+Function 'main'
+Lines executed:96.55% of 29
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+Calls executed:95.83% of 24
+
+Function 'smithyRandomCheck'
+Lines executed:87.50% of 32
+Branches executed:100.00% of 18
+Taken at least once:72.22% of 18
+Calls executed:100.00% of 5
+
+File 'randomtestcard1.c'
+Lines executed:91.80% of 61
+Branches executed:100.00% of 24
+Taken at least once:75.00% of 24
+Calls executed:96.55% of 29
+Creating 'randomtestcard1.c.gcov'
+
+File '<built-in>'
+No executable lines
+No branches
+No calls
+Removing '<built-in>.gcov'
+
+File 'dominion.c'
+Lines executed:12.48% of 561
+Branches executed:11.75% of 417
+Taken at least once:6.00% of 417
+Calls executed:8.08% of 99
+Creating 'dominion.c.gcov'
+
+~~~~~~~~~~~~~~~~~~~~  RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+Checking Village Card here
+
+~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
+PASSED TESTS: 10000
+FAILED TESTS: 0
+ ~~~~~~~~~~~~~~~ PASSED ALL RANDOM TEST ~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~  END OF RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~  COVERAGE  ~~~~~~~~~~~~~~~~~~~~
+
+Function 'main'
+Lines executed:73.33% of 30
+Branches executed:100.00% of 6
+Taken at least once:83.33% of 6
+Calls executed:68.00% of 25
+
+Function 'villageRandomCheck'
+Lines executed:66.67% of 36
+Branches executed:100.00% of 20
+Taken at least once:50.00% of 20
+Calls executed:100.00% of 3
+
+File 'randomtestcard2.c'
+Lines executed:69.70% of 66
+Branches executed:100.00% of 26
+Taken at least once:57.69% of 26
+Calls executed:71.43% of 28
+Creating 'randomtestcard2.c.gcov'
+
+File '<built-in>'
+No executable lines
+No branches
+No calls
+Removing '<built-in>.gcov'
+
+File 'dominion.c'
+Lines executed:11.76% of 561
+Branches executed:11.27% of 417
+Taken at least once:5.28% of 417
+Calls executed:6.06% of 99
+Creating 'dominion.c.gcov'
+
+~~~~~~~~~~~~~~~~~~~~  RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+Checking Adventurer Card
+
+~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
+PASSED TESTS: 0
+FAILED TESTS: 10000
+
+~~~~~~~~~~~~~~~~~ FAILURE REPORT ~~~~~~~~~~~~~~~~~~
+Discard failed: 0
+Deck Count mismatch: 0
+Hand Count mismatch: 0
+Draw Card Failures: 0
+Card Effects Failures: 0
+Treasure Failures: 10000
+***** FAILED RANDOM TEST *****
+
+~~~~~~~~~~~~~~~~~~~~  END OF RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~  COVERAGE  ~~~~~~~~~~~~~~~~~~~~
+
+Function 'main'
+Lines executed:97.14% of 35
+Branches executed:100.00% of 8
+Taken at least once:87.50% of 8
+Calls executed:96.00% of 25
+
+Function 'advRandomCheck'
+Lines executed:77.97% of 59
+Branches executed:95.45% of 44
+Taken at least once:77.27% of 44
+Calls executed:66.67% of 3
+
+File 'randomtestadventurer.c'
+Lines executed:85.11% of 94
+Branches executed:96.15% of 52
+Taken at least once:78.85% of 52
+Calls executed:92.86% of 28
+Creating 'randomtestadventurer.c.gcov'
+
+File '<built-in>'
+No executable lines
+No branches
+No calls
+Removing '<built-in>.gcov'
+
+Function 'smithyEffect'
+Lines executed:0.00% of 6
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 3
+
+Function 'remodelEffect'
+Lines executed:0.00% of 12
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 6
+
+Function 'minionEffect'
+Lines executed:0.00% of 18
+Branches executed:0.00% of 18
+Taken at least once:0.00% of 18
+Calls executed:0.00% of 7
+
+Function 'gardensEffect'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'adventurerEffect'
+Lines executed:94.44% of 18
+Branches executed:100.00% of 12
+Taken at least once:91.67% of 12
+Calls executed:66.67% of 3
+
+Function 'updateCoins'
+Lines executed:0.00% of 11
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'gainCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 1
+
+Function 'discardCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+No calls
+
+Function 'cardEffect'
+Lines executed:4.15% of 193
+Branches executed:14.29% of 161
+Taken at least once:1.86% of 161
+Calls executed:3.70% of 54
+
+Function 'getCost'
+Lines executed:0.00% of 30
+Branches executed:0.00% of 28
+Taken at least once:0.00% of 28
+No calls
+
+Function 'drawCard'
+Lines executed:36.36% of 22
+Branches executed:33.33% of 6
+Taken at least once:16.67% of 6
+Calls executed:0.00% of 1
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+Calls executed:0.00% of 2
+
+Function 'scoreFor'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+Calls executed:0.00% of 3
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'whoseTurn'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'supplyCount'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'numHandCards'
+Lines executed:0.00% of 2
+No branches
+Calls executed:0.00% of 1
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 4
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 3
+
+Function 'shuffle'
+Lines executed:0.00% of 16
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+Calls executed:0.00% of 2
+
+Function 'initializeGame'
+Lines executed:0.00% of 62
+Branches executed:0.00% of 46
+Taken at least once:0.00% of 46
+Calls executed:0.00% of 5
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+No branches
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 3
+No branches
+No calls
+
+Function 'compare'
+Lines executed:0.00% of 6
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+No calls
+
+File 'dominion.c'
+Lines executed:6.24% of 561
+Branches executed:8.87% of 417
+Taken at least once:3.60% of 417
+Calls executed:4.04% of 99
+Creating 'dominion.c.gcov'
+
