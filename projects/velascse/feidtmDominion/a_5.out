@@ -189,13 +189,13 @@ Creating 'dominion.c.gcov'
 
 Checking to see if three cards have been added
 Hand Before: 5
-Hand After: 8
-Test: Failed
+Hand After: 7
+Test: Passed
 
 Checking deck count to make sure it is 3 cards less
 Deck Before: 2
-Deck After: 1
-Test: Failed
+Deck After: 2
+Test: Passed
 
 Checking discard pile to make sure it was added
 Discard Before: 0
@@ -432,37 +432,30 @@ Creating 'dominion.c.gcov'
 Checking Smithy Card here
 
 ~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
-PASSED TESTS: 1
-FAILED TESTS: 20023
-
-~~~~~~~~~~~~~~~~~ FAILURE REPORT ~~~~~~~~~~~~~~~~~~
-Discard failed: 25
-Deck Count mismatch: 9999
-Hand Count mismatch: 9999
-Draw Card Failures: 0
-Card Effects Failures: 0
-***** FAILED RANDOM TEST *****
+PASSED TESTS: 10000
+FAILED TESTS: 0
+ ~~~~~~~~~~~~~~~ PASSED ALL RANDOM TEST ~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~  END OF RANDOM TEST  ~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~  COVERAGE  ~~~~~~~~~~~~~~~~~~~~
 
 Function 'main'
-Lines executed:96.55% of 29
+Lines executed:75.86% of 29
 Branches executed:100.00% of 6
 Taken at least once:83.33% of 6
-Calls executed:95.83% of 24
+Calls executed:70.83% of 24
 
 Function 'smithyRandomCheck'
-Lines executed:87.50% of 32
+Lines executed:68.75% of 32
 Branches executed:100.00% of 18
-Taken at least once:72.22% of 18
+Taken at least once:50.00% of 18
 Calls executed:100.00% of 5
 
 File 'randomtestcard1.c'
-Lines executed:91.80% of 61
+Lines executed:72.13% of 61
 Branches executed:100.00% of 24
-Taken at least once:75.00% of 24
-Calls executed:96.55% of 29
+Taken at least once:58.33% of 24
+Calls executed:75.86% of 29
 Creating 'randomtestcard1.c.gcov'
 
 File '<built-in>'
@@ -472,9 +465,9 @@ No calls
 Removing '<built-in>.gcov'
 
 File 'dominion.c'
-Lines executed:12.48% of 561
+Lines executed:12.12% of 561
 Branches executed:11.75% of 417
-Taken at least once:6.00% of 417
+Taken at least once:5.52% of 417
 Calls executed:8.08% of 99
 Creating 'dominion.c.gcov'
 

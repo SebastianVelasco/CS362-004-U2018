@@ -1353,7 +1353,7 @@ int smithyEffect(struct gameState *state, int handPos)
   int currentPlayer = whoseTurn(state);
 
   // +3 Cards
-  for (i = 0; i < 4; i++) { // BUG: +4 cards instead of +3.
+  for (i = 0; i < 3; i++) { // BUG: +4 cards instead of +3.
     drawCard(currentPlayer, state);
   }
 
